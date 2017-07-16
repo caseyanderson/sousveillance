@@ -1,6 +1,6 @@
 Note: this information is very similar to the information on [this](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) page.
 
-1. download the raspbian jessie image I prepared for this workshop from [dropbox]() to your computer. when it is done downloading, double-click to unzip.
+1. download the compressed raspbian jessie image I prepared for this workshop from [dropbox]() to your computer. when it is done downloading.
 
 2. Download and install the `SDFormatter` from [here](https://www.sdcard.org/downloads/formatter_4/index.html)
 
@@ -46,16 +46,16 @@ Note: this information is very similar to the information on [this](https://www.
     diskutil unmountDisk /dev/disk2
     ```
 
-4. next, copy the data from the `.img` file to your SD card by entering the following in the terminal:
+4. next, copy the data from the uncompress and copy the data from the `.img.gz` file to your SD card by entering the following in the terminal:
 
     ```bash
-    sudo dd bs=1m if=image.img of=/dev/disk<disk# from diskutil>
+gunzip --stdout rasbian.img.gz | sudo dd bs=1m of=/dev/<disk# from diskutil>
     ```
 
     *for example:*
 
     ```bash
-    sudo dd bs=1m if=/Users/mdp/Downloads/2016-05-27-raspbian-jessie.img of=/dev/disk2
+    gunzip --stdout /Users/mdp/Downloads/2016-05-27-raspbian-jessie.img | sudo dd bs=1m of=/dev/disk2
     ```
 
     this takes a **VERY LONG TIME**, so go get a cup of coffee or take a walk or something.
