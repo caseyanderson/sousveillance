@@ -9,3 +9,4 @@
 * omxplayer, the recommended command line video player for raspbian, `sudo apt-get install omxplayer`
 * gpiozero, a python library for interacting with the Pi's GPIO, `sudo apt-get install python3-gpiozero`
 * picamera, a python library for interacting with the PiCamera, `sudo apt-get install python3-picamera`
+* gpac, used to convert `h264` video files to `mp4` (I am sure it does lots of other things too), `sudo apt-get install -y gpac`
