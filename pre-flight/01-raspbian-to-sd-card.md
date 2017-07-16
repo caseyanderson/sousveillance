@@ -1,8 +1,3 @@
-
-On this page you will find information for setting up another SD card, in the future, with the image provided to you at the beginning of this workshop.
-
-## Writing Raspbian Jessie Lite to an SD Card
-
 Note: this information is very similar to the information on [this](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) page.
 
 1. download the raspbian jessie image I prepared for this workshop from [dropbox]() to your computer. when it is done downloading, double-click to unzip.
