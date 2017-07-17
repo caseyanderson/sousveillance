@@ -14,7 +14,7 @@
 
 Connect your PiCamera to the Camera Cable and then to the Pi Zero W. It should look like this (photo sourced from Adafruit):
 
-<img src="/media/pizero_hookup_example.jpeg" width="630" height="375">
+<img src="/media/pizero_hookup_example.jpeg" width="485" height="364">
 
 
 ### simple photo
