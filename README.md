@@ -1,7 +1,10 @@
 # sousveillance
 a workshop by Casey Anderson
+
 [Machine Project](http://machineproject.com/), Los Angeles, CA
+
 07/22/2017
+
 
 <img src="/media/SurSousVeillanceByStephanieMannAge6.png">
 
