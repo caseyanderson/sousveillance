@@ -12,7 +12,9 @@
 
 ### connecting the picamera
 
-INSERT PHOTOS FOR PIZERO W  and CAMERA HERE
+Connect your PiCamera to the Camera Cable and then to the Pi Zero W. It should look like this:
+
+<img src="/media/pizero_hookup_example.jpeg">
 
 
 ### simple photo
