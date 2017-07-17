@@ -11,7 +11,7 @@
 
 Note: Illustrations sourced from [here](https://www.raspberrypi.org/learning/physical-computing-with-python/worksheet/).
 
-<img src="/assets/button.png" width="630" height="375">
+<img src="/media/button.png" width="630" height="375">
 
 
 ### simple button
