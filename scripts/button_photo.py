@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # still photo taken at every button press
 
 from gpiozero import Button

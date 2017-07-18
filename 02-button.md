@@ -125,3 +125,16 @@ except KeyboardInterrupt:
     camera.close()
 
 ```
+
+
+### converting video
+
+Note: mad props to [this](http://www.raspberrypi-spy.co.uk/2013/05/capturing-hd-video-with-the-pi-camera-module/) article for the conversion process.
+
+[simple_video](https://github.com/caseyanderson/rpi/blob/master/03_Camera/camera_scripts/simple_video.py) saves video as Raw H264 Video Data, so there are some extra steps to take prior to being able to view it without plugging a display into our Pi:
+
+1. Download and install `gpac`: `sudo apt-get install -y gpac`
+2. `cd` to the directory where your video lives and, using `MP4Box` (installed with `gpac`), convert your video to `.mp4` by editing (to suit your needs) and then execute this command: `MP4Box -fps 30 -add myvid.h264 myvid.mp4`
+3. once the video has been converted, delete the original: `rm mywid.h264`
+4. finally `cd` to the `Dropbox-Uploader` folder, edit (to suit your needs) and then execute the following command: `./dropbox_uploader.sh upload ./myvid.mp4 /`
+5. back on your Macbook navigate to your dropbox folder and double click the `.mp4` to watch

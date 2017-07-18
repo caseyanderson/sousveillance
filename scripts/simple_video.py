@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # record 5 seconds of video
 
 from picamera import PiCamera
@@ -13,9 +14,10 @@ print("CALIBRATING")
 sleep(2)
 print("READY")
 print()
-camera.start_recording('/home/pi/' + x + '.mp4')
+camera.start_recording('/home/pi/' + x + '.h264')
 print("RECORDING FIVE SECONDS OF VIDEO")
 sleep(5)
 print("CAMERA STOPPING")
 camera.stop_recording()
+camera.stop_preview()
 camera.close()

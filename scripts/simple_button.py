@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from gpiozero import Button
 
 button = Button(4)
