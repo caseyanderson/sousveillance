@@ -103,5 +103,5 @@ camera.close()
 A few quick notes:
 
 * we allow the camera to calibrate for 2 seconds after calling `camera.start_preview()`, which gives the camera time to focus
-* `camera.capture()` is replaced here with `camera.start_recording()`, which will record video until we issue the stop command (`camera.stop_recording()`). Note that the `datetime` line from [simple_photo](https://github.com/caseyanderson/rpi/blob/master/03_Camera/camera_scripts/simple_photo.py) is reused verbatim here to avoid overwriting files/provide a timeline via filename
+* `camera.capture()` is replaced here with `camera.start_recording()`, which will record video until we issue the stop command (`camera.stop_recording()`). Note that the `datetime` line from [simple_photo](https://github.com/caseyanderson/sousveillance/blob/master/scripts/simple_photo.py) is reused verbatim here to avoid overwriting files/provide a timeline via filename
 * the `sleep` command controls how long the video is, so recording video longer than five seconds is simply a matter of increasing the sleep time to the desired duration
