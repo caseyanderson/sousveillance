@@ -1,3 +1,5 @@
+## picamera
+
 ### reference
 * [getting started with pi camera](https://www.raspberrypi.org/learning/getting-started-with-picamera/worksheet/)
 * [pi camera docs](https://picamera.readthedocs.io/en/release-1.13/)
@@ -19,7 +21,7 @@ Connect your PiCamera to the Camera Cable and then to the Pi Zero W. It should l
 
 ### simple photo
 
-Below one can find the code to take a single photo from Python3 with the PiCamera:
+Below one can find the code to take a single photo from `Python3` with the PiCamera:
 
 ```python
 from picamera import PiCamera
@@ -52,7 +54,7 @@ This method relies on Andrea Fabrizi's [dropbox uploader](https://github.com/and
 1. on your Pi run the following command to clone the dropbox uploader repo: `git clone https://github.com/andreafabrizi/Dropbox-Uploader.git`
 2. next on your Macbook navigate to dropbox and, if you do not already have one, set up a free account.
 3. once you have a dropbox account setup, go [here](https://www.dropbox.com/developers/apps) to setup an application to interact with dropbox
-4. this next part will probably change from time-to-time, but as of 4/18/2017 the process was as follows:
+4. this next part will probably change from time-to-time, but as of 7/18/2017 the process was as follows:
     * click  the `Create app` button
     * select “Dropbox API” and “Full Dropbox,” give your app a unique name (example: yourname_camera_app) then confirm by clicking `Create the app`
     * finally, in the settings tab there is a button that reads `Generate access token`. Click this button and then copy the string of seemingly random letters and numbers (referred to as a token) to your clipboard <CMD+C>. This string is how dropbox will identify your raspberry pi
@@ -90,7 +92,7 @@ print("CALIBRATING")
 sleep(2)
 print("READY")
 print()
-camera.start_recording('/home/pi/' + x + '.mp4')
+camera.start_recording('/home/pi/' + x + '.h264')
 print("RECORDING FIVE SECONDS OF VIDEO")
 sleep(5)
 print("CAMERA STOPPING")

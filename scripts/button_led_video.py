@@ -19,11 +19,10 @@ try:
     while True:
         if (button.value == True) and (is_recording == 0):
 
-            camera = PiCamera() # there has to be a better way to do this
+            camera = PiCamera()
             sleep(2)
             camera.start_preview()
             print("CALIBRATING...")
-            sleep(2)
             print("READY TO RECORD!")
             print()
             print("RECORDING")
@@ -41,9 +40,9 @@ try:
             camera.close()
             is_recording = 0
 
+
 except KeyboardInterrupt:
     print("INTERRUPTED!")
     button.close()
     camera.close()
     led.close()
-
