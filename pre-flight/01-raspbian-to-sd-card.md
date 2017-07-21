@@ -32,7 +32,7 @@ Note: this information is very similar to the information on [this](https://www.
        2:                      Linux                         33.6 MB    disk2s5
        3:             Windows_FAT_32 boot                    66.1 MB    disk2s6
        4:                      Linux                         6.7 GB     disk2s7
-       ```
+```
 
 3. unmount the sd card, so we can write our new image to it, by entering the following command into the terminal:
 
