@@ -8,7 +8,7 @@ from datetime import datetime
 from time import sleep
 
 # setup led and button
-button = Button(4)
+button = Button(2)
 led = LED(17)
 
 # recording flag
