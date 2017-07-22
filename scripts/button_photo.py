@@ -6,7 +6,7 @@ from picamera import PiCamera
 from datetime import datetime
 from time import sleep
 
-button = Button(4)
+button = Button(2)
 camera = PiCamera()
 
 def capture():
