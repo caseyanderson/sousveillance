@@ -5,6 +5,11 @@
 * [Getting started with physical computing](https://www.raspberrypi.org/learning/physical-computing-with-python/worksheet/)
 
 
+### equipment
+* SPST Button
+* Breadboard
+
+
 ### hookup pattern
 
 Note: Illustrations sourced from [here](https://www.raspberrypi.org/learning/physical-computing-with-python/worksheet/).
